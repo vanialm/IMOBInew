@@ -6,7 +6,7 @@
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
     <!--Define o conjunto de caracteres usado na página como UTF-8, que suporta a maioria dos caracteres usados em diferentes idiomas.-->
-    <meta charset="utf-8">
+    <!--<meta charset="utf-8">-->
     <title>IMOBI | Fale Conosco</title>
     <!--Define o tamanho da tela para ajustar automaticamente a largura da página à tela do dispositivo do usuário.-->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -101,9 +101,6 @@
 
 
 
-    
-
-
         <!-- Tela de Cadastro -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -148,24 +145,31 @@
                     <!--Início do Formulário-->
 
                     <div class="col-lg-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="wow fadeInUp" data-wow-delay="0.2s">
 
                             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
                                 <input type=hidden name="oid" value="00DDo000001Ct32">
-                                <input type=hidden name="retURL">
+                                <input type=hidden name="retURL" value="https://www.instagram.com/imobi.imobiliaria/">
                                 
                                 <div class="row g-3">
 
                                     <!--Nome-->
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="Name" placeholder="Nome" name="Name" required/>
-                                            <label for="Name">Nome e Sobrenome</label>
+                                            <input type="text" class="form-control" id="first_name" placeholder="Nome" name="first_name" required/>
+                                            <label for="first_name">Nome</label>
                                         </div>
                                     </div>
 
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="last_name" placeholder="Sobrenome" name="last_name" required/>
+                                            <label for="last_name">Sobrenome</label>
+                                        </div>
+                                    </div>
                                    
+
                                     <!--E-mail-->
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -178,7 +182,7 @@
                                     <!--CPF-->
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="00NDo0000075R76" placeholder="CPF" name="CPF__c" required/>
+                                            <input type="text" class="form-control" id="00NDo0000075R76" placeholder="CPF" name="00NDo0000075R76" required/>
                                             <label for="cpf">CPF</label>
                                         </div>
                                     </div>
@@ -186,7 +190,7 @@
                                     <!--Empresa-->
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="company" placeholder="Empresa" name="company" required/>
+                                            <input type="text" class="form-control" id="company" placeholder="Empresa" name="company"/>
                                             <label for="company">Empresa</label>
                                         </div>
                                     </div>
@@ -240,6 +244,7 @@
 
                                     <div class="col-12">
                                         <button class="btn btn-primary w-100 py-3" type="submit">Cadastrar</button>
+                                    </div>
                                     </div>
                                 </div>
                             </form>

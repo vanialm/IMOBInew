@@ -3,8 +3,6 @@
 
 <head>
     <!--Define o conjunto de caracteres usado na página como UTF-8, que suporta a maioria dos caracteres usados em diferentes idiomas.-->
-    <meta charset="utf-8">
-
 
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
@@ -151,9 +149,7 @@
                 
                 <!--Início do Formulário-->                                
         
-            
-
-
+    
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
 
@@ -169,14 +165,16 @@
         <!--Nome-->
         <div class="col-md-6">
             <div class="form-floating">
-                <label for="name">Seu Nome Completo</label><input type="text" class="form-control" id="name" placeholder="Seu nome" name="name" size="20" required/>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome" name="name" size="20" required>
+                <label for="name">Seu Nome Completo</label>
             </div>
           </div>
   
           <!--Email-->
           <div class="col-md-6">
             <div class="form-floating">
-                <label for="email">Seu E-mail</label><input type="text" class="form-control" id="email" placeholder="Seu email" name="email" required>
+                <input type="text" class="form-control" id="email" placeholder="Seu email" name="email" required>
+                <label for="email">Seu E-mail</label>
             </div>
           </div>
   
@@ -191,14 +189,11 @@
           <!--Descrição-->
           <div class="col-12">
             <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" name="description" required></textarea>
+              <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="description" style="height: 150px" name="description" required></textarea>
               <label for="description">Descrição</label>
             </div>
           </div>
   
-          <!--Hidden fields-->
-          <input type="hidden" name="orgid" value="YOUR_ORG_ID">
-          <input type="hidden" name="retURL" value="http://www.example.com/thank_you.html">
   
           <!--Botão Enviar-->
           <div class="col-12">
@@ -209,7 +204,7 @@
                         </div>
                     </div> 
                 </form>
-                    <!--Fim do Formulário-->
+                <!--Fim do Formulário-->
                 
             </div>
         </div>
